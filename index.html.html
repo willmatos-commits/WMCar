@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>William Matos - Profissionalismo e Segurança</title>
+    <style>
+        /* Variáveis de Cores */
+        :root {
+            --cor-fundo: #000000;
+            --cor-primaria: #FFFFFF; /* Prata/Branco para texto principal */
+            --cor-secundaria: #AAAAAA; /* Prata mais escuro para detalhes */
+            --cor-destaque: #FFD700; /* Ouro/Amarelo para destaque (baseado na imagem) */
+            --cor-botao: #25D366; /* Cor do WhatsApp */
+            --cor-texto-botao: #FFFFFF;
+        }
+
+        /* Estilos Gerais */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: var(--cor-fundo);
+            color: var(--cor-primaria);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .cartao {
+            background-color: #111111; /* Um preto um pouco mais claro para o cartão */
+            border-radius: 15px;
+            padding: 30px;
+            max-width: 400px;
+            width: 100%;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            border: 1px solid var(--cor-secundaria);
+        }
+
+        /* Cabeçalho */
+        .logo-container {
+            margin-bottom: 20px;
+        }
+
+        .perfil-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 3px solid var(--cor-destaque);
+        }
+
+        .logo-principal {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: var(--cor-destaque); /* Mantendo o destaque da imagem original */
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+        }
+
+        .slogan {
+            font-size: 0.9em;
+            color: var(--cor-secundaria);
+            margin-top: 5px;
+            text-transform: uppercase;
+        }
+
+        /* Informações de Contato */
+        .contato {
+            margin: 20px 0;
+        }
+
+        .telefone {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: var(--cor-primaria);
+            margin-bottom: 10px;
+        }
+
+        /* Lista de Serviços */
+        .servicos-titulo {
+            font-size: 1.1em;
+            color: var(--cor-destaque);
+            margin-top: 25px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            border-bottom: 1px solid var(--cor-secundaria);
+            padding-bottom: 5px;
+        }
+
+        .servicos-lista {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: left;
+            font-size: 1em;
+            color: var(--cor-secundaria);
+        }
+
+        .servicos-lista li {
+            margin-bottom: 8px;
+            padding-left: 15px;
+            position: relative;
+        }
+
+        .servicos-lista li::before {
+            content: '•';
+            color: var(--cor-destaque);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        /* Destaque 24 Horas */
+        .servico-24h {
+            display: inline-block;
+            background-color: var(--cor-destaque);
+            color: var(--cor-fundo);
+            padding: 5px 15px;
+            margin-top: 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 0.9em;
+            text-transform: uppercase;
+        }
+
+        /* Botão WhatsApp */
+        .botao-whatsapp {
+            display: inline-flex; /* Alterado para inline-flex para centralizar o bloco */
+            padding: 15px;
+            margin-top: 30px;
+            background-color: var(--cor-botao);
+            color: var(--cor-texto-botao);
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.1s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            align-items: center;
+            justify-content: center;
+        }
+
+        .botao-whatsapp:hover {
+            background-color: #1DA851;
+            transform: translateY(-2px);
+        }
+
+        .whatsapp-icon {
+            margin-right: 10px;
+            width: 20px;
+            height: 20px;
+            /* Ícone SVG simples do WhatsApp */
+            fill: var(--cor-texto-botao);
+        }
+
+        /* Responsividade */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .cartao {
+                padding: 20px;
+                border-radius: 10px;
+            }
+            .logo-principal {
+                font-size: 2em;
+            }
+            .telefone {
+                font-size: 1.3em;
+            }
+            .botao-whatsapp {
+                padding: 12px;
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cartao">
+        <div class="logo-container">
+            <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663170784889/ahRpLhOizAypKBWC.jpg" alt="Foto de Perfil do William" class="perfil-img">
+            <div class="logo-principal">WILLIAM MATOS</div>
+            <div class="slogan">PROFISSIONALISMO E SEGURANÇA</div>
+        </div>
+
+        <div class="contato">
+            <div class="telefone">11 943716093</div>
+        </div>
+
+        <div class="servicos-titulo">Serviços Oferecidos</div>
+        <ul class="servicos-lista">
+            <li>Entregas</li>
+            <li>Turismos / Shows</li>
+            <li>Aeroportos / Translados</li>
+            <li>Empresas / Viagens</li>
+            <li>Trajetos longos e curtos</li>
+        </ul>
+
+        <div class="servico-24h">SERVIÇO 24 HORAS</div>
+
+        <!-- Container para centralizar o botão do WhatsApp -->
+        <div style="text-align: center;">
+            <!-- O botão do WhatsApp com a funcionalidade solicitada -->
+        <!-- O link usa a API do WhatsApp para iniciar uma conversa com uma mensagem pré-definida. -->
+        <!-- A funcionalidade de "enviar localização em tempo real" é uma ação que o usuário (cliente) deve realizar no WhatsApp após iniciar a conversa, pois não pode ser automatizada via link. -->
+        <!-- O texto do link explica a necessidade de compartilhar a localização. -->
+        <a href="https://api.whatsapp.com/send?phone=5511943716093&text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20uma%20corrida." 
+           class="botao-whatsapp" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           onclick="alert('Atenção: Após abrir o WhatsApp, por favor, compartilhe sua localização em tempo real no chat para que o William possa te encontrar rapidamente.');">
+            <svg class="whatsapp-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22.03L7.37 20.64C8.82 21.45 10.39 21.86 12.04 21.86C17.5 21.86 21.95 17.41 21.95 11.95C21.95 6.49 17.5 2.04 12.04 2.04V2M16.18 15.54C15.9 16.19 15.19 16.43 14.54 16.15L13.78 15.84C13.13 15.56 12.48 15.65 11.92 16.03C11.36 16.41 10.71 16.5 10.06 16.22L9.3 15.91C8.65 15.63 8.19 15.08 7.91 14.43L7.59 13.67C7.31 13.02 7.4 12.37 7.78 11.81C8.16 11.25 8.25 10.6 7.97 9.95L7.65 9.19C7.37 8.54 7.61 7.83 8.26 7.55L9.02 7.24C9.67 6.96 10.32 7.05 10.88 7.43C11.44 7.81 12.09 7.9 12.74 7.62L13.5 7.31C14.15 7.03 14.61 7.58 14.89 8.23L15.21 8.99C15.49 9.64 15.4 10.29 15.02 10.85C14.64 11.41 14.55 12.06 14.83 12.71L15.15 13.47C15.43 14.12 15.98 14.58 16.63 14.86L17.39 15.17C18.04 15.45 17.8 16.16 17.15 16.44L16.18 15.54Z"/>
+            </svg>
+            SOLICITAR CORRIDA (WhatsApp)
+        </a>
+        </div>
+        <p style="font-size: 0.8em; color: var(--cor-secundaria); margin-top: 15px;">
+            * Ao clicar, você será direcionado ao WhatsApp com a mensagem inicial.
+            <br>
+            ** Lembre-se de **compartilhar sua localização em tempo real** no chat para que o William possa te encontrar.
+        </p>
+    </div>
+
+</body>
+</html>
